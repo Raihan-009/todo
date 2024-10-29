@@ -30,6 +30,6 @@ pods:
 	@ kubectl get pods
 
 push:
-	@ docker build -t $(DOCKERHUB_USERNAME)/my-backend:${tag} .
-	@ docker push $(DOCKERHUB_USERNAME)/my-backend:${tag}
+	@ docker build -t $(DOCKERHUB_USERNAME)/my-frontend:${tag} ./todo-app
+	@ docker push $(DOCKERHUB_USERNAME)/my-frotend:${tag}
 
