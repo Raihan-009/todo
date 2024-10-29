@@ -31,5 +31,5 @@ pods:
 
 push:
 	@ docker build -t $(DOCKERHUB_USERNAME)/my-frontend:${tag} ./todo-app
-	@ docker push $(DOCKERHUB_USERNAME)/my-frotend:${tag}
+	@ docker push $(DOCKERHUB_USERNAME)/my-frontend:${tag}
 
