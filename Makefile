@@ -30,6 +30,6 @@ pods:
 	@ kubectl get pods
 
 push:
-	@ docker build -t $(DOCKERHUB_USERNAME)/my-backend:${tag}
+	@ docker build -t $(DOCKERHUB_USERNAME)/my-backend:${tag} ./fast-api
 	@ docker push $(DOCKERHUB_USERNAME)/my-backend:${tag}
 
